@@ -3,22 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>FakeTube</title>
-  
-  <div class="pesquisa-container"></div>
-  <img src="logotipo.jpeg" alt="logotipo" height="70">
   <link rel="stylesheet" href="style.css">
-  <input type="text" placeholder="Digite sua pesquisa aqui..." />
-  <button>Pesquisar</button>
-  </div>
-
 </head>
 <body>
+ 
+  <header class="navbar">
+    <div class="logo">
+      <img src="logotipo.jpeg" alt="Logotipo" height="50">
+       <h1>FakeTube</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar">
+      <button>🔍</button>
+    </div>
+    <div class="user-actions">
+      <button>🔔</button>
+      <button>👤</button>
+    </div>
+  </header>
+
+<div class="listbar">
+  <ul>
+    <li><a href="#">🏠 Início</a></li>
+    <li><a href="#">🔥 Shorts</a></li>
+    <li><a href="#">📺 Inscrições</a></li>
+    <li><a href="#">📚 Biblioteca</a></li>
+    <li><a href="#">⏱️ Histórico</a></li>
+  </ul>
+</div>
 
 
   <div class="container">
     <main class="video-section">
       <div class="video-player">
-        <iframe src="videoplayback_tejZzgPC.mp4" allow="fullscreen" ></iframe>
+        <video controls>
+          <source src="videoplayback_tejZzgPC.mp4" type="video/mp4">
+          Video falando sobre scrum
+        </video>
       </div>
 
       <h1>Explicando SCRUM de um jeito rápido e prático</h1>
@@ -36,7 +57,7 @@
           <p>1.5M inscritos</p>
         </div>
         <button>Inscrever-se</button>
-        <button>Seja Menbro</button>
+        <button>Seja Membro</button>
       </div>
 
       <div class="description">
@@ -45,7 +66,7 @@
         Então, entenda agora a metodologia Scrum, sua importância para qualquer tipo de negócio e como ela funciona de forma prática e simplificada!<br></p>
       </div>
 
-      <!-- Comentários -->
+    
       <div class="comments-section">
         <h2>Comentários</h2>
 
@@ -65,7 +86,7 @@
           </div>
         </div>
 
-        <form class="comment">
+        <form class="comment-form">
           <textarea placeholder="Adicionar um comentário..."></textarea>
           <button type="submit">Comentar</button>
         </form>
@@ -76,7 +97,7 @@
       <div class="suggested-video">
         <img src="como criar seu negocio.jpeg" alt="Thumbnail">
         <div>
-          <h4>Como criar um negócio de zero</h4>
+          <h4>Como criar um negócio do zero</h4>
           <p>MCE</p>
         </div>
       </div>
@@ -90,14 +111,60 @@
       </div>
 
       <div class="suggested-video">
-        
         <img src="dorama.jpeg" alt="Thumbnail">
+        <div>
           <h4>A senhora e o mafioso</h4>
           <p>Doramas Venture</p>
-        
+        </div>
       </div>
 
-      
+      <div class="suggested-video">
+        <img src="como melhorar a qualidade do video.jpeg" alt="Thumbnail">
+        <div>
+          <h4>Como melhorar a qualidade do seu video para mais likes</h4>
+          <p>Um youtuber basico</p>
+        </div>
+      </div>
+
+      <div class="suggested-video">
+        <img src="concurseiro nutella x concurseiro raiz.jpeg" alt="Thumbnail">
+        <div>
+          <h4>Concurseiro Raiz x Concurseiro Nutella</h4>
+          <p>Bombado dos concursos</p>
+        </div>
+      </div>
+
+      <div class="suggested-video">
+        <img src="Revista Galileu.jpeg" alt="Thumbnail">
+        <div>
+          <h4>Melhores livros para quem quer aprender programação</h4>
+          <p>Programador - Pro</p>
+        </div>
+      </div>
+
+      <div class="suggested-video">
+        <img src="Leiturinha.jpeg" alt="Thumbnail">
+        <div>
+          <h4>Melhores livros para criança</h4>
+          <p>Leiturinha</p>
+        </div>
+      </div>
+
+      <div class="suggested-video">
+        <img src="tiktok dowload.jpeg" alt="Thumbnail">
+        <div>
+          <h4>Como baixar os videos do tiktok sem pagar</h4>
+          <p>Baixador de games</p>
+        </div>
+      </div>
+
+      <div class="suggested-video">
+        <img src="Melhore seu desempenho de estudos.jpeg" alt="Thumbnail">
+        <div>
+          <h4>Melhore seu desempenho nos estudos</h4>
+          <p>Viciado em aprender</p>
+        </div>
+      </div>
     </aside>
   </div>
 </body>
