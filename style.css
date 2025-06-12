@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   color: #ffffff;
 }
@@ -24,17 +23,6 @@ header.navbar {
   cursor: pointer;
   margin-right: 15px;
   user-select: none;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  height: 40px;
-  border-radius: 5px;
 }
 
 .search-bar {
@@ -86,18 +74,11 @@ header.navbar {
 .listbar {
   background-color: #212121;
   width: 200px;
-  height: 100vh;
-  position: fixed;
+  height: 1000px;
+  position: absolute;
   top: 60px; 
-  left: 0;
   padding-top: 20px;
-  border-right: 1px solid #333;
-}
-
-.listbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  border-right: #333;
 }
 
 .listbar li {
@@ -113,10 +94,6 @@ header.navbar {
   padding: 10px 20px;
   border-radius: 10px;
   transition: background-color 0.2s;
-}
-
-.listbar a:hover {
-  background-color: #383838;
 }
 
 .video-section {
@@ -150,7 +127,6 @@ header.navbar {
   cursor: pointer;
   color: #fff;
   font-size: 14px;
-  transition: background-color 0.3s;
 }
 
 .video-actions button:hover {
@@ -169,10 +145,6 @@ header.navbar {
 .channel-info img {
   border-radius: 50%;
   height: 50px;
-}
-
-.channel-info h3 {
-  margin: 0;
 }
 
 .channel-info button {
@@ -254,7 +226,6 @@ header.navbar {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .comment-form button:hover {
@@ -270,12 +241,11 @@ header.navbar {
 
 .suggested-video {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   background-color: #181818;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 6px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .suggested-video:hover {
@@ -283,15 +253,14 @@ header.navbar {
 }
 
 .suggested-video img {
-  width: 60%;
-  height: 80px;
+  width: 40%;
+  height: 60px;
   object-fit: cover;
   border-radius: 5px;
 }
 
 .suggested-video h4 {
   font-size: 14px;
-  margin: 0;
   color: #fff;
 }
 
