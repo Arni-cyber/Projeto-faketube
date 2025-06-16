@@ -83,6 +83,7 @@ header.navbar {
 
 .listbar li {
   margin-bottom: 10px;
+  list-style-type: none;
 }
 
 .listbar a {
